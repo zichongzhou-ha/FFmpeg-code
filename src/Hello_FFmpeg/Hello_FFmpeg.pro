@@ -30,9 +30,13 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-INCLUDEPATH += D:/qt/AV/ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include
+win32:
+{
+    message($$(PATH))
+    FFMPEG_HOME= D:/qt/AV/ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev
+    INCLUDEPATH += $${FFMPEG_HOME}/include
 
-LIBS += -LD:/qt/AV/ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/lib \
+    LIBS += -L$$(PATH)/lib \
         -lavcodec \
         -lavdevice \
         -lavfilter \
@@ -41,3 +45,8 @@ LIBS += -LD:/qt/AV/ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/lib \
         -lpostproc \
         -lswresample \
         -lswscale
+}
+
+#message()可以用来打印
+# $${}可以用来取值：.pro中定义的变量
+# $$()可以用来取值： 系统环境变量中的值

@@ -19,7 +19,7 @@ CXXFLAGS      = -fno-keep-inline-dllexport -g -std=gnu++11 -Wall -Wextra -Wextra
 INCPATH       = -I..\..\src\Hello_FFmpeg -I. -I..\..\..\ffmpeg-4.2.1-win32-dev\ffmpeg-4.2.1-win32-dev\include -I..\..\..\..\qt-install\qt\5.14.2\mingw73_32\include -I..\..\..\..\qt-install\qt\5.14.2\mingw73_32\include\QtWidgets -I..\..\..\..\qt-install\qt\5.14.2\mingw73_32\include\QtGui -I..\..\..\..\qt-install\qt\5.14.2\mingw73_32\include\QtANGLE -I..\..\..\..\qt-install\qt\5.14.2\mingw73_32\include\QtCore -Idebug -I. -I..\..\..\..\qt-install\qt\5.14.2\mingw73_32\mkspecs\win32-g++ 
 LINKER      =        g++
 LFLAGS        =        -Wl,-subsystem,windows -mthreads
-LIBS        =        -LD:\qt\AV\ffmpeg-4.2.1-win32-dev\ffmpeg-4.2.1-win32-dev\lib -lavcodec -lavdevice -lavfilter -lavformat -lavutil -lpostproc -lswresample -lswscale D:\qt\qt-install\qt\5.14.2\mingw73_32\lib\libQt5Widgets.a D:\qt\qt-install\qt\5.14.2\mingw73_32\lib\libQt5Gui.a D:\qt\qt-install\qt\5.14.2\mingw73_32\lib\libQt5Core.a  -lmingw32 D:\qt\qt-install\qt\5.14.2\mingw73_32\lib\libqtmain.a -LC:\openssl\lib -LC:\Utils\my_sql\mysql-5.7.25-win32\lib -LC:\Utils\postgresql\pgsql\lib -lshell32 
+LIBS        =        -L"D:\qt\qt-install\qt\Tools\mingw730_32\bin;D:\qt\qt-install\qt\5.14.2\mingw73_32\bin;D:\qt\qt-install\qt\Tools\mingw730_32\bin;D:\Enterprise\SOUI\soui-master\soui-master\bin;D:\university course\SOUI\soui-master\soui-master\bin;D:\university course\WinCUPL\Fitters;D:\Program Files (x86)\Jave\java file\bin;C:\Program Files\Common Files\Oracle\Java\javapath;D:\文件存储2\linux\bin\;D:\;件存储1\Scripts\;D:;文件存储1\;%Sy;temRoot%\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\dotnet\;C:\Program Files (x86)\NetSarang\Xshell 8\;D:\文件存储2\linux\;D:\Enterprise\Git\cmd;C:\Program Files\TortoiseGit\bin;D:\软件\node.js\;C:\Windows\system32;C:\Windows\;D:\qt\qt-install\qt\5.14.2\msvc2017\bin;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx86\x86;D:\qt\010 Editor;;C:\Program Files\Docker\Docker\resources\bin;D:\prractice\yolo\anaconda;D:\prractice\yolo\anaconda\Library\mingw-w64\bin;D:\prractice\yolo\anaconda\Library\usr\bin;D:\prractice\yolo\anaconda\Library\bin;D:\prractice\yolo\anaconda\Scripts;D:\Program Files (x86)\python_soft\Scripts\;D:\Program Files (x86)\python_soft\;C:\Users\zhouzichong\AppData\Local\Microsoft\WindowsApps;C:\Users\zhouzichong\.dotnet\tools;C:\Users\zhouzichong\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\zhouzichong\AppData\Roaming\npm;D:\软件\w64devkit\w64devkit\bin;;D:\Program Files (x86)\pycharm_soft\PyCharm 2024.1\bin;;C:\Users\zhouzichong\AppData\Local\Programs\Microsoft VS Code\bin\copilot-shim\lib" -lavcodec -lavdevice -lavfilter -lavformat -lavutil -lpostproc -lswresample -lswscale D:\qt\qt-install\qt\5.14.2\mingw73_32\lib\libQt5Widgets.a D:\qt\qt-install\qt\5.14.2\mingw73_32\lib\libQt5Gui.a D:\qt\qt-install\qt\5.14.2\mingw73_32\lib\libQt5Core.a  -lmingw32 D:\qt\qt-install\qt\5.14.2\mingw73_32\lib\libqtmain.a -LC:\openssl\lib -LC:\Utils\my_sql\mysql-5.7.25-win32\lib -LC:\Utils\postgresql\pgsql\lib -lshell32 
 QMAKE         = D:\qt\qt-install\qt\5.14.2\mingw73_32\bin\qmake.exe
 DEL_FILE      = del
 CHK_DIR_EXISTS= if not exist
@@ -491,7 +491,23 @@ debug/mainwindow.o: ../../src/Hello_FFmpeg/mainwindow.cpp ../../src/Hello_FFmpeg
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qtouchdevice.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qtabwidget.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qicon.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QVariant \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QApplication \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qapplication.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qcoreapplication.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qeventloop.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qdesktopwidget.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qguiapplication.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qinputmethod.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QMenuBar \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qmenubar.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qmenu.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qaction.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qactiongroup.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QStatusBar \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qstatusbar.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\..\src\Hello_FFmpeg\mainwindow.cpp
 
 debug/moc_mainwindow.o: debug/moc_mainwindow.cpp 

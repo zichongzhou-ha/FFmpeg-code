@@ -224,6 +224,7 @@ Makefile: ../../src/Hello_FFmpeg/Hello_FFmpeg.pro ../../../../qt-install/qt/5.14
 		../../../../qt-install/qt/5.14.2/mingw73_32/mkspecs/features/qt_config.prf \
 		../../../../qt-install/qt/5.14.2/mingw73_32/mkspecs/win32-g++/qmake.conf \
 		../../../../qt-install/qt/5.14.2/mingw73_32/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../qt-install/qt/5.14.2/mingw73_32/mkspecs/features/exclusive_builds.prf \
 		../../../../qt-install/qt/5.14.2/mingw73_32/mkspecs/features/toolchain.prf \
 		../../../../qt-install/qt/5.14.2/mingw73_32/mkspecs/features/default_pre.prf \
@@ -252,7 +253,6 @@ Makefile: ../../src/Hello_FFmpeg/Hello_FFmpeg.pro ../../../../qt-install/qt/5.14
 		../../../../qt-install/qt/5.14.2/mingw73_32/lib/Qt5Gui.prl \
 		../../../../qt-install/qt/5.14.2/mingw73_32/lib/Qt5Core.prl \
 		../../../../qt-install/qt/5.14.2/mingw73_32/lib/qtmain.prl \
-		.qmake.stash \
 		../../../../qt-install/qt/5.14.2/mingw73_32/mkspecs/features/build_pass.prf
 	$(QMAKE) -o Makefile ..\..\src\Hello_FFmpeg\Hello_FFmpeg.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
 ../../../../qt-install/qt/5.14.2/mingw73_32/mkspecs/features/spec_pre.prf:
@@ -409,6 +409,7 @@ Makefile: ../../src/Hello_FFmpeg/Hello_FFmpeg.pro ../../../../qt-install/qt/5.14
 ../../../../qt-install/qt/5.14.2/mingw73_32/mkspecs/features/qt_config.prf:
 ../../../../qt-install/qt/5.14.2/mingw73_32/mkspecs/win32-g++/qmake.conf:
 ../../../../qt-install/qt/5.14.2/mingw73_32/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../qt-install/qt/5.14.2/mingw73_32/mkspecs/features/exclusive_builds.prf:
 ../../../../qt-install/qt/5.14.2/mingw73_32/mkspecs/features/toolchain.prf:
 ../../../../qt-install/qt/5.14.2/mingw73_32/mkspecs/features/default_pre.prf:
@@ -437,7 +438,6 @@ Makefile: ../../src/Hello_FFmpeg/Hello_FFmpeg.pro ../../../../qt-install/qt/5.14
 ../../../../qt-install/qt/5.14.2/mingw73_32/lib/Qt5Gui.prl:
 ../../../../qt-install/qt/5.14.2/mingw73_32/lib/Qt5Core.prl:
 ../../../../qt-install/qt/5.14.2/mingw73_32/lib/qtmain.prl:
-.qmake.stash:
 ../../../../qt-install/qt/5.14.2/mingw73_32/mkspecs/features/build_pass.prf:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\..\src\Hello_FFmpeg\Hello_FFmpeg.pro -spec win32-g++ "CONFIG+=debug" "CONFIG+=qml_debug"
