@@ -17,8 +17,10 @@ class Audio_thread : public QThread
     Q_OBJECT
 private:
     void run() override;
+    bool _stop;
 public:
     explicit Audio_thread(QObject *parent = nullptr);
+    void setstop(bool stop);
     ~Audio_thread();
 };
 

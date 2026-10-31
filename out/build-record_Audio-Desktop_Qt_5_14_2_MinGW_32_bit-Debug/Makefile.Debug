@@ -326,6 +326,40 @@ debug/moc_mainwindow.cpp: ../../src/record_Audio/mainwindow.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qtouchdevice.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qtabwidget.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qicon.h \
+		../../src/record_Audio/audio_thread.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QObject \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QThread \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qthread.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QDebug \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QFile \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavcodec/avcodec.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/samplefmt.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/avutil.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/common.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/attributes.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/macros.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/version.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/avconfig.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/mem.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/error.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/rational.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/mathematics.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/intfloat.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/log.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/pixfmt.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/buffer.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/cpu.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/channel_layout.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/dict.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/frame.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/hwcontext.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavcodec/version.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavdevice/avdevice.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavdevice/version.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/opt.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavformat/avformat.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavformat/avio.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavformat/version.h \
 		debug/moc_predefs.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/bin/moc.exe
 	D:\qt\qt-install\qt\5.14.2\mingw73_32\bin\moc.exe $(DEFINES) --include D:/qt/AV/ffmpeg-code/out/build-record_Audio-Desktop_Qt_5_14_2_MinGW_32_bit-Debug/debug/moc_predefs.h -ID:/qt/qt-install/qt/5.14.2/mingw73_32/mkspecs/win32-g++ -ID:/qt/AV/ffmpeg-code/src/record_Audio -ID:/qt/AV/ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include -ID:/qt/qt-install/qt/5.14.2/mingw73_32/include -ID:/qt/qt-install/qt/5.14.2/mingw73_32/include/QtWidgets -ID:/qt/qt-install/qt/5.14.2/mingw73_32/include/QtGui -ID:/qt/qt-install/qt/5.14.2/mingw73_32/include/QtANGLE -ID:/qt/qt-install/qt/5.14.2/mingw73_32/include/QtCore -I. -ID:/qt/qt-install/qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++ -ID:/qt/qt-install/qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32 -ID:/qt/qt-install/qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward -ID:/qt/qt-install/qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include -ID:/qt/qt-install/qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include-fixed -ID:/qt/qt-install/qt/Tools/mingw730_32/i686-w64-mingw32/include ..\..\src\record_Audio\mainwindow.h -o debug\moc_mainwindow.cpp
@@ -563,42 +597,47 @@ debug/main.o: ../../src/record_Audio/main.cpp ../../src/record_Audio/mainwindow.
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qtouchdevice.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qtabwidget.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qicon.h \
+		../../src/record_Audio/audio_thread.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QObject \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QThread \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qthread.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QDebug \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QApplication \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qapplication.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qcoreapplication.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qeventloop.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qdesktopwidget.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qguiapplication.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qinputmethod.h \
-		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavdevice/avdevice.h \
-		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavdevice/version.h \
-		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/version.h \
-		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/macros.h \
-		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/log.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QFile \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavcodec/avcodec.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/samplefmt.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/avutil.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/common.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/attributes.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/macros.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/version.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/avconfig.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/mem.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/error.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/rational.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/mathematics.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/intfloat.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/log.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/pixfmt.h \
-		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/opt.h \
-		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/dict.h \
-		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/samplefmt.h \
-		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavformat/avformat.h \
-		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavcodec/avcodec.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/buffer.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/cpu.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/channel_layout.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/dict.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/frame.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/hwcontext.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavcodec/version.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavdevice/avdevice.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavdevice/version.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/opt.h \
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavformat/avformat.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavformat/avio.h \
-		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavformat/version.h
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavformat/version.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QApplication \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qapplication.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qcoreapplication.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qeventloop.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qdesktopwidget.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qguiapplication.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qinputmethod.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o ..\..\src\record_Audio\main.cpp
 
 debug/mainwindow.o: ../../src/record_Audio/mainwindow.cpp ../../src/record_Audio/mainwindow.h \
@@ -709,28 +748,6 @@ debug/mainwindow.o: ../../src/record_Audio/mainwindow.cpp ../../src/record_Audio
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qtouchdevice.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qtabwidget.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qicon.h \
-		ui_mainwindow.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QVariant \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QApplication \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qapplication.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qcoreapplication.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qeventloop.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qdesktopwidget.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qguiapplication.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qinputmethod.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QCheckBox \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qcheckbox.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qabstractbutton.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QMenuBar \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qmenubar.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qmenu.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qaction.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qactiongroup.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QPushButton \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qpushbutton.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QStatusBar \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qstatusbar.h \
-		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QWidget \
 		../../src/record_Audio/audio_thread.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QObject \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QThread \
@@ -764,7 +781,29 @@ debug/mainwindow.o: ../../src/record_Audio/mainwindow.cpp ../../src/record_Audio
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavutil/opt.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavformat/avformat.h \
 		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavformat/avio.h \
-		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavformat/version.h
+		../../../ffmpeg-4.2.1-win32-dev/ffmpeg-4.2.1-win32-dev/include/libavformat/version.h \
+		ui_mainwindow.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QVariant \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QApplication \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qapplication.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qcoreapplication.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qeventloop.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qdesktopwidget.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qguiapplication.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qinputmethod.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QCheckBox \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qcheckbox.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qabstractbutton.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QMenuBar \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qmenubar.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qmenu.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qaction.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qactiongroup.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QPushButton \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qpushbutton.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QStatusBar \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qstatusbar.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\..\src\record_Audio\mainwindow.cpp
 
 debug/moc_audio_thread.o: debug/moc_audio_thread.cpp 
