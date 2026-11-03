@@ -6,6 +6,7 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , _playthread(nullptr)
 {
     ui->setupUi(this);
 }
@@ -23,6 +24,17 @@ void show_Version()
 
 void MainWindow::on_pushButton_clicked()
 {
-    PlayThread* playThread=new PlayThread(this);
-    playThread->start();
+    if(_playthread)
+    {
+        _playthread->requestInterruption();
+        _playthread=nullptr;
+        ui->pushButton->setText(u8"开始播放");
+    }
+    else
+    {
+        _playthread=new PlayThread(this);
+        _playthread->start();
+        ui->pushButton->setText(u8"停止播放");
+    }
+
 }

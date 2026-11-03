@@ -2,7 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include "playthread.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -20,5 +20,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    PlayThread* _playthread;
 };
 #endif // MAINWINDOW_H

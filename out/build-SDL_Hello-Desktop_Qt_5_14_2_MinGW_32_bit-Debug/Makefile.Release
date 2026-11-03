@@ -222,6 +222,57 @@ release/moc_mainwindow.cpp: ../../src/SDL_Hello/mainwindow.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qtouchdevice.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qtabwidget.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qicon.h \
+		../../src/SDL_Hello/playthread.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QObject \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QThread \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qthread.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QFile \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QtDebug \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_main.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_stdinc.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_config.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_platform.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/begin_code.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/close_code.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_assert.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_atomic.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_audio.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_error.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_endian.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_mutex.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_thread.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_rwops.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_clipboard.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_cpuinfo.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_events.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_video.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_pixels.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_rect.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_surface.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_blendmode.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_keyboard.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_keycode.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_scancode.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_mouse.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_joystick.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_gamecontroller.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_quit.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_gesture.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_touch.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_filesystem.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_haptic.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_hints.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_loadso.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_log.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_messagebox.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_power.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_render.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_sensor.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_shape.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_system.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_timer.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_version.h \
 		release/moc_predefs.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/bin/moc.exe
 	D:\qt\qt-install\qt\5.14.2\mingw73_32\bin\moc.exe $(DEFINES) --include D:/qt/AV/ffmpeg-code/out/build-SDL_Hello-Desktop_Qt_5_14_2_MinGW_32_bit-Debug/release/moc_predefs.h -ID:/qt/qt-install/qt/5.14.2/mingw73_32/mkspecs/win32-g++ -ID:/qt/AV/ffmpeg-code/src/SDL_Hello -ID:/qt/AV/ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include -ID:/qt/qt-install/qt/5.14.2/mingw73_32/include -ID:/qt/qt-install/qt/5.14.2/mingw73_32/include/QtWidgets -ID:/qt/qt-install/qt/5.14.2/mingw73_32/include/QtGui -ID:/qt/qt-install/qt/5.14.2/mingw73_32/include/QtANGLE -ID:/qt/qt-install/qt/5.14.2/mingw73_32/include/QtCore -I. -ID:/qt/qt-install/qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++ -ID:/qt/qt-install/qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32 -ID:/qt/qt-install/qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward -ID:/qt/qt-install/qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include -ID:/qt/qt-install/qt/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include-fixed -ID:/qt/qt-install/qt/Tools/mingw730_32/i686-w64-mingw32/include ..\..\src\SDL_Hello\mainwindow.h -o release\moc_mainwindow.cpp
@@ -478,6 +529,57 @@ release/main.o: ../../src/SDL_Hello/main.cpp ../../src/SDL_Hello/mainwindow.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qtouchdevice.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qtabwidget.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qicon.h \
+		../../src/SDL_Hello/playthread.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QObject \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QThread \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qthread.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QFile \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QtDebug \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_main.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_stdinc.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_config.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_platform.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/begin_code.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/close_code.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_assert.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_atomic.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_audio.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_error.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_endian.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_mutex.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_thread.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_rwops.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_clipboard.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_cpuinfo.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_events.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_video.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_pixels.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_rect.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_surface.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_blendmode.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_keyboard.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_keycode.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_scancode.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_mouse.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_joystick.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_gamecontroller.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_quit.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_gesture.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_touch.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_filesystem.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_haptic.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_hints.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_loadso.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_log.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_messagebox.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_power.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_render.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_sensor.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_shape.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_system.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_timer.h \
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_version.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QApplication \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qapplication.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qcoreapplication.h \
@@ -596,7 +698,6 @@ release/mainwindow.o: ../../src/SDL_Hello/mainwindow.cpp ../../../../qt-install/
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qtouchdevice.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qtabwidget.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qicon.h \
-		ui_mainwindow.h \
 		../../src/SDL_Hello/playthread.h \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QObject \
 		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QThread \
@@ -647,7 +748,27 @@ release/mainwindow.o: ../../src/SDL_Hello/mainwindow.cpp ../../../../qt-install/
 		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_shape.h \
 		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_system.h \
 		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_timer.h \
-		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_version.h
+		../../../ffmeg-test-project/SDL/01-sdl-basic/01-sdl-basic/SDL2-2.0.10/include/SDL_version.h \
+		ui_mainwindow.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/QVariant \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QApplication \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qapplication.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qcoreapplication.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtCore/qeventloop.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qdesktopwidget.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qguiapplication.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtGui/qinputmethod.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QMenuBar \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qmenubar.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qmenu.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qaction.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qactiongroup.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QPushButton \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qpushbutton.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qabstractbutton.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QStatusBar \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/qstatusbar.h \
+		../../../../qt-install/qt/5.14.2/mingw73_32/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o ..\..\src\SDL_Hello\mainwindow.cpp
 
 release/playthread.o: ../../src/SDL_Hello/playthread.cpp ../../src/SDL_Hello/playthread.h \
