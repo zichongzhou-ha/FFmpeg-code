@@ -1,5 +1,14 @@
 #include "audio_thread.h"
-
+void showSpec(AVFormatContext* ctx)
+{
+    AVStream* stream=ctx->streams[0];
+    AVCodecParameters* params=stream->codecpar;
+    qDebug()<<params->channels;
+    qDebug()<<params->sample_rate;
+    qDebug()<<params->format;
+    //每一个样本的一个声道占用多少字节
+    qDebug()<<av_get_bytes_per_sample((AVSampleFormat)params->format);
+}
 void Audio_thread::run()
 {
 #ifdef Q_OS_WIN
@@ -15,8 +24,11 @@ void Audio_thread::run()
         return ;
     }
     AVFormatContext* ctx=nullptr;
+    //showSpec(ctx);
     const char* dev = "audio=@device_cm_{33D9A762-90C8-11D0-BD43-00A0C911CE86}\\wave_{3C9C50C2-462F-4574-BA06-B5FAB447BA74}";
     int ret=avformat_open_input(&ctx,dev,fmt,nullptr);
+    //qDebug();
+    //showSpec(ctx);
     if(ret!=0)
     {
         char buf[1024];
@@ -36,7 +48,21 @@ void Audio_thread::run()
     av_init_packet(&pkt);
     while(!isInterruptionRequested()&& av_read_frame(ctx, &pkt)==0)
     {
-        file.write((const char*)pkt.data, pkt.size);
+        if(ret==0)
+        {
+            file.write((const char*)pkt.data, pkt.size);
+        }
+        else if(ret==AVERROR(EAGAIN))
+        {
+            continue;
+        }
+        else {
+            char errbuf[1024];
+            av_strerror(ret,errbuf,sizeof (errbuf));
+            qDebug()<<"av_read_frame error"<<errbuf<<ret;
+            break;
+        }
+
     }
 
     file.close();
@@ -69,3 +95,5 @@ Audio_thread::~Audio_thread()
     //窗口释放子线程时，会给子线程的flag置数，等待子线程跑完后释放内存。
     //不过这里现在的代码逻辑肯定还有问题：子线程和主线程之间的。
 }
+
+

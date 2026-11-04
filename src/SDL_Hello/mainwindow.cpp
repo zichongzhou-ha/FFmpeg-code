@@ -34,6 +34,13 @@ void MainWindow::on_pushButton_clicked()
     {
         _playthread=new PlayThread(this);
         _playthread->start();
+        connect(_playthread,&PlayThread::finished,
+                [this](){
+            _playthread=nullptr;
+            ui->pushButton->setText(u8"开始播放");
+            //写这个是为了说如果线程结束了，那这个按钮也要变
+        });
+
         ui->pushButton->setText(u8"停止播放");
     }
 
