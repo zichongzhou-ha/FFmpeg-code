@@ -25,16 +25,8 @@ extern "C"
 }
 int main(int argc, char *argv[])
 {
-    WAVHeader header;
-    header.riffChunkDataSize=11522048-8;
-    header.sampleRate=44100;
-    header.bitsPerSample=16;
-    header.numChannels=2;
-    header.blockAlign=(header.bitsPerSample*header.numChannels)>>3;
-     header.byteRate=header.blockAlign*header.sampleRate;
-    header.dataChunkDataSize=11522048;
-//     FFmpegs::pcm2wav(header,"test.pcm","out.wav");
-    FFmpegs::pcm2wav(header,"D:/qt/AV/test/test.pcm","out.wav");
+
+
     avdevice_register_all();
 
     QApplication a(argc, argv);

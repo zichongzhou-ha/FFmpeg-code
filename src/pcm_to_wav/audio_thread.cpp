@@ -66,9 +66,23 @@ void Audio_thread::run()
     }
 
     file.close();
-    avformat_close_input(&ctx);
 
-    qDebug()<<"thread finish";
+
+
+
+    AVStream* stream=ctx->streams[0];
+    AVCodecParameters* params=stream->codecpar;
+    WAVHeader header;
+    header.sampleRate=params->sample_rate;
+    header.bitsPerSample=av_get_bits_per_sample(params->codec_id);
+    header.numChannels=params->channels;
+    header.audioFormat=(params->codec_id>=AV_CODEC_ID_PCM_F32BE)?3:1;
+    FFmpegs::pcm2wav(header,"test.pcm","out.wav");
+
+
+
+     avformat_close_input(&ctx);
+       qDebug()<<"thread finish";
 }
 
 Audio_thread::Audio_thread(QObject *parent) : QThread(parent),_stop(false)

@@ -8,13 +8,18 @@ FFmpegs::FFmpegs()
 
 void FFmpegs::pcm2wav(WAVHeader &header, const char *pcmFilename, const char *wavFilename)
 {
+    header.blockAlign=(header.bitsPerSample*header.numChannels)>>3;
+     header.byteRate=header.blockAlign*header.sampleRate;
+
     QFile pcmfile(pcmFilename);
     if(!pcmfile.open(QFile::ReadOnly))
     {
         qDebug()<<u8"打开文件失败";
         return ;
     }
-
+    header.dataChunkDataSize=pcmfile.size();
+     header.riffChunkDataSize=header.dataChunkDataSize
+             +sizeof(WAVHeader)-8;
     QFile wavfile(wavFilename);
     if(!wavfile.open(QFile::WriteOnly))
     {
