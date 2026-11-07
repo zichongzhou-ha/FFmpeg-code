@@ -19,6 +19,7 @@ private:
 public:
     explicit Audio_thread(QObject *parent = nullptr);
     ~Audio_thread();
+
 };
 
 #endif // AUDIO_THREAD_H

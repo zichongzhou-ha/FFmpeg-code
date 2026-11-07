@@ -22,12 +22,14 @@ void Audio_thread::run()
 
     int64_t out_ch_layout=AV_CH_LAYOUT_STEREO;
     AVSampleFormat out_sample_fmt=AV_SAMPLE_FMT_FLT;
-    int out_sample_rate=44100;
+    int out_sample_rate=48000;
 
     uint8_t **outData=nullptr;
     int outLinesize=0;
     int outChs=av_get_channel_layout_nb_channels(out_ch_layout);
-    int outSamples=1024;
+//    int outSamples=1024;
+    int outSamples=av_rescale_rnd(out_sample_rate,inSamples,
+          in_sample_rate,AV_ROUND_UP);
     int outBytesPerSample=outChs*av_get_bytes_per_sample(out_sample_fmt);
     SwrContext* ctx=swr_alloc_set_opts(NULL,out_ch_layout,out_sample_fmt,out_sample_rate
                                        ,in_ch_layout,in_sample_fmt,in_sample_rate,
@@ -77,7 +79,7 @@ void Audio_thread::run()
 
     }
 
-    if(!inFile.open(QFile::WriteOnly))
+    if(!outFile.open(QFile::WriteOnly))
     {
         qDebug()<<"file open error: "<<inFilename;
         goto end;
@@ -99,12 +101,31 @@ void Audio_thread::run()
         }
         outFile.write((char*)outData[0],ret*outBytesPerSample);
     }
+
+    while((ret=swr_convert(ctx,outData,outSamples,//这里有疑问
+                           nullptr,0))>0)
+    {
+        outFile.write((char*)outData[0],ret*outBytesPerSample);
+    }
 end:
+    if(inData)
+    {
+        av_free(&inData[0]);
+    }
+    if(outData)
+    {
+        av_free(&outData[0]);
+    }
     av_freep(&inData);
     av_freep(&outData);
     swr_free(&ctx);
     inFile.close();
     outFile.close();
+}
+
+Audio_thread::Audio_thread(QObject *parent):QThread(parent)
+{
+
 }
 
 Audio_thread::~Audio_thread()

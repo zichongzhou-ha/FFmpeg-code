@@ -59,7 +59,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        AudioButton->setText(QCoreApplication::translate("MainWindow", "\345\274\200\345\247\213\345\275\225\351\237\263", nullptr));
+        AudioButton->setText(QCoreApplication::translate("MainWindow", "\345\274\200\345\247\213\351\207\215\351\207\207\346\240\267", nullptr));
         checkBox->setText(QCoreApplication::translate("MainWindow", "CheckBox", nullptr));
     } // retranslateUi
 
